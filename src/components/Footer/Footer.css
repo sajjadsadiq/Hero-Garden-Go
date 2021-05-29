@@ -1,0 +1,26 @@
+.footerWrap{
+    background-color: black;
+    color: white;
+    padding: 40px 0px;
+}
+.footerContainer{
+    width:80%;
+    margin: auto;
+    
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.footerContent{
+    width: 25%;
+    padding: 0px 30px;
+    position: relative;
+    flex-wrap: wrap;
+
+}

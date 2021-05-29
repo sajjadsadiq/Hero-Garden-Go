@@ -1,0 +1,23 @@
+.subscribeContainer{
+    width:50%;
+    margin: auto;
+   
+}
+.subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center
+}
+.content input {
+    width:300px;
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size:20px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.content input::placeholder{
+    text-align: center;
+}

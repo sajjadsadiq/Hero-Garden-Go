@@ -1,0 +1,19 @@
+.NavLogo{
+    font-size: 40px;
+    font-weight: 500;
+
+}
+.logo{
+    display: flex;
+}
+.imgLogo{
+    height:50px
+}
+.NavbarGO{
+    font-size: 50px;
+}
+
+.NavLink{
+    font-size: 20px;
+    font-weight: 500;
+}

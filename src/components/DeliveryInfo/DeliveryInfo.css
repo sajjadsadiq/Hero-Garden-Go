@@ -1,0 +1,42 @@
+.deliveryInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.deliveryCard{
+    position: relative;
+    width: 320px;
+    height: 180px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.05),
+                5px 5px 5px rgba(0, 0, 0, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    margin: 15px;
+}
+.deliveryCard .content{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.icons{
+    font-size: 40px;
+    color: #0069D9;
+    margin-bottom: 5px;
+}
+.icons p{
+    color: silver;
+}
+.deliveryTitle {
+    width:50%;
+    margin: auto;
+    text-align:center;
+}

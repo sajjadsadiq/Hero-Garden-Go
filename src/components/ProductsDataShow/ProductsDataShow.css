@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: silver; */
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200vh;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+}
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.05),
+                5px 5px 5px rgba(0, 0, 0, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    margin: 15px;
+}
+.container .card .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    /* background-color: silver; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.container .card:hover .box{
+    transform: translateY(-50px);
+    background:#F3F3F3;
+
+}
+.container .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+.container .card .box .content h2{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 10em;
+    color: rgba(0, 0, 0, 0.02);
+    transition: 0.5s;
+}
+.cardImg{
+
+}
+.img{
+    height:250px;
+    border-radius: 10px;
+}
+
+.cardPrice{
+    text-decoration: none;
+    font-size:20px;
+    font-weight: 500;
+}
