@@ -6,6 +6,7 @@ import DeliveryInfo from './components/DeliveryInfo/DeliveryInfo';
 import Footer from './components/Footer/Footer';
 import SubscribeEmail from './components/SubscribeEmail/SubscribeEmail';
 import SpecialOffer from './components/SpecialOffer/SpecialOffer';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Products/>
       <DeliveryInfo/>
       <SpecialOffer/>
-      <SubscribeEmail/>
+      <SubscribeEmail />
       <Footer/>
     </div>
   );
