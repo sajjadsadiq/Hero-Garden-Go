@@ -1,7 +1,6 @@
-import React from 'react'
-import ProductsDataShow from '../ProductsDataShow/ProductsDataShow'
-import './Products.css'
-
+import React, { useContext } from 'react';
+import './Product.css'
+import { IdContext } from '../../App';
 const productsData = [
     {
         id: 1,
@@ -53,22 +52,40 @@ const productsData = [
     }
 
 ]
-const Products = () => {
+const Product = () => {
+    const [id,setId] = useContext(IdContext)
+    const product = productsData.find(pr=>pr.id===id)
+    console.log(product)
     return (
-        <div className="produtsContainer">
-            <div className="produtsTitle">
-                <h1 className=" mt-5">Our Produts</h1>
-                <p className="">Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas sed urna malesuada consectetuer.</p>
+     
+    <div className=" container mx-auto">
+                         <div className='row container '>
+            <div className='col-md-12 text-center' style={{}}>
+                <div >
+                <img src={product.img} />
+                </div>
             </div>
-            <div className="container">
-                {
-                    productsData.map(products => <ProductsDataShow products ={products}/>)
-                }
-                
-            </div>
-        
-        </div>
-    )
-}
+            <div className='col-md-12'>
+                <h2 style={{textAlign: 'center',marginTop:'25px'}}>{product.title}</h2>
+             <div className=' text-justify d-flex align-items-center justify-content-center'>
+             <p className='des'>
+                    {product.description}
+                </p>
+             </div>
+               <div className='d-flex align-items-center justify-content-center'>
+               <h3>
+                   ${product.price}
+                </h3>
+                <button className="btn btn-primary ml-4">
+                    Buy Now
+                </button>
+               </div>
 
-export default Products
+                </div>
+        </div>
+    </div>
+     
+    );
+};
+
+export default Product;
