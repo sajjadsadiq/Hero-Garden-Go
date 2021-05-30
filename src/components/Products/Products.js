@@ -1,12 +1,13 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 import ProductsDataShow from '../ProductsDataShow/ProductsDataShow'
 import './Products.css'
-// import productsData from '../fakeData/fakeData.json'
+import FakeData from '../../FakeData/FakeData.json'
+import { useSelector } from 'react-redux'
 
-const Products = () => {
-    const productsData = useSelector((state) => {
-        return state.trees.treesList;
+
+const Products = () => { 
+    const productsData=useSelector((state)=>{
+        return state.product.product
     })
     return (
         <div className="produtsContainer">

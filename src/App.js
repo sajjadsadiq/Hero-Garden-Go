@@ -13,7 +13,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route as Route,
+  Route,
 } from "react-router-dom";
 import Login from './components/Login/Login';
 import Product from './components/Product/Product';

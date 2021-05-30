@@ -1,26 +1,6 @@
-
-export const addToCart = (payload) => {
-
+export const addToCart=(payload )=>{
     return {
-        
-        type : 'Add_To_Cart',
+        type:'ADD_TO_CART',
         payload
-    
     }
-
-
-}
-
-
-
-export const removeFromCart = (payload) => {
-
-    return {
-        
-        type : 'Remove_From_Cart',
-        payload
-    
-    }
-
-
 }

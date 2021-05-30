@@ -1,27 +1,28 @@
-import allTrees from '../../fakeData/fakeData.json'
+import FakeData from '../../../FakeData/FakeData.json'
 
 const initialState = {
-
-    cartList : [],
-    treesList : allTrees,
-
+    cart:[],
+    product:FakeData,
+    remove:[]
 }
-const treeReducer = (state = initialState, action) => {
-    
-    switch (action.type) {
-       case 'Add_To_Cart':
-        
-            return state
-     
-    
-       case 'Remove_From_Cart':
+const booksReducers=(state=initialState,action) =>{
+    console.log('state',state.cart)
+    switch(action.type){
+        case 'ADD_TO_CART':
+            const newStore = {
+                ...state,
+                addingCart:[...state.cart,action.payload]
+
+            }
+            return newStore
+  
             
-            return state
-        
-       default:
-        return state;
-    }
-    
-}
+            
 
-export default treeReducer;
+        default:
+            return state
+              
+    }
+   
+}
+export default booksReducers
