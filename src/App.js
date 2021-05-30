@@ -13,14 +13,14 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route as PrivateRoute,
+  Route as Route,
   Link
 } from "react-router-dom";
 import Login from './components/Login/Login';
 import Product from './components/Product/Product';
 import Contact from './components/Contact/Contact';
 import Shop from './components/Shop/Shop';
-import Route from './components/PrivateRoute/PrivateRoute';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 export const UserContext = createContext()
 export const IdContext = createContext()
 function App() {
@@ -38,35 +38,35 @@ function App() {
    <Navbar/>
 
      <Switch>
-     <PrivateRoute exact path='/'>
+     <Route exact path='/'>
    <Header/>
    <Products/>
       <DeliveryInfo/>
       <SpecialOffer/>
       <SubscribeEmail/>
 
-   </PrivateRoute>
+   </Route>
 
-   <PrivateRoute  path='/home'>
+   <Route  path='/home'>
    <Header/>
    <Products/>
       <DeliveryInfo/>
       <SpecialOffer/>
       <SubscribeEmail/>
 
-   </PrivateRoute>
-   <PrivateRoute path='/contact'>
+   </Route>
+   <Route path='/contact'>
      <Contact />
-   </PrivateRoute>
-   <PrivateRoute path='/Products'>
+   </Route>
+   <Route path='/Products'>
      <Products />
-   </PrivateRoute>
-   <PrivateRoute path='/shop'>
+   </Route>
+   <Route path='/shop'>
      <Shop />
-   </PrivateRoute>
-  <PrivateRoute path='/login'>
+   </Route>
+  <Route path='/login'>
     <Login />
-  </PrivateRoute>
+  </Route>
   <PrivateRoute path='/product'>
     <Product />
   </PrivateRoute>
