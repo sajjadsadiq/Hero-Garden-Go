@@ -8,7 +8,6 @@ import DeliveryInfo from './components/DeliveryInfo/DeliveryInfo';
 import Footer from './components/Footer/Footer';
 import SubscribeEmail from './components/SubscribeEmail/SubscribeEmail';
 import SpecialOffer from './components/SpecialOffer/SpecialOffer';
-import Contact from './components/Contact/Contact';
 
 import React from "react";
 import {
@@ -53,7 +52,28 @@ function App() {
    <Products/>
       <DeliveryInfo/>
       <SpecialOffer/>
+      <SubscribeEmail/>
 
+   </PrivateRoute>
+   <PrivateRoute path='/contact'>
+     <Contact />
+   </PrivateRoute>
+   <PrivateRoute path='/Products'>
+     <Products />
+   </PrivateRoute>
+   <PrivateRoute path='/shop'>
+     <Shop />
+   </PrivateRoute>
+  <PrivateRoute path='/login'>
+    <Login />
+  </PrivateRoute>
+  <PrivateRoute path='/product'>
+    <Product />
+  </PrivateRoute>
+
+     </Switch>
+     <Footer/>
+   </Router>
     </div>
     </UserContext.Provider>
     </IdContext.Provider>
