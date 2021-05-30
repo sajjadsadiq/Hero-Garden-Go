@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import './Product.css'
 import { IdContext } from '../../App';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart } from '../Redux/Actions/Action';
+import { addToCart } from '../Redux/Actions/treeAction';
+
 
 const Product = () => {
     const [id,setId] = useContext(IdContext)
