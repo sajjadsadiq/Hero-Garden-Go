@@ -20,6 +20,7 @@ const Products = () => {
                 }
                 
             </div>
+        
         </div>
     )
 }
