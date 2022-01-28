@@ -1,13 +1,15 @@
 .deliveryInfo{
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 .deliveryCard{
     position: relative;
     width: 320px;
-    height: 180px;
+    height: 200px;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
                 inset -5px -5px 5px rgba(255, 255, 255, 0.05),
                 5px 5px 5px rgba(0, 0, 0, 0.05),

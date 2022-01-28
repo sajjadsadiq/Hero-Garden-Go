@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='footerContainer'>
                 <div className="footer row">
                     <div className="footerContent footerItem col-md-3 mb-5 ">
-                        <h4 className="mb-4">My Account</h4>
+                        <h4 className="mb-4m footer-title">My Account</h4>
                         <p>About Us</p>
                         <p>Team Member</p>
                         <p>Career</p>
@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footerContent footerItem col-md-3 mb-5">
-                        <h4 className="mb-4">Information</h4>
+                        <h4 className="mb-4 footer-title">Information</h4>
                         <p>About Us</p>
                         <p>My orders</p>
                         <p>Career</p>
@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footerContent footerItem col-md-3 mb-5">
-                        <h4 className="mb-4">Quick Links</h4>
+                        <h4 className="mb-4 footer-title">Quick Links</h4>
                         <p>Support Center</p>
                         <p>Terms & Conditions</p>
                         <p>Shipping</p>
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footerContent footerItem col-md-3 mb-5">
-                        <h4 className="mb-4">Categories</h4>
+                        <h4 className="mb-4 footer-title">Categories</h4>
                         <p>About Us</p>
                         <p>Team Member</p>
                         <p>Career</p>

@@ -1,0 +1,18 @@
+.contactContainer{
+    
+}
+.contactContainer input {
+    width: 600px;
+
+}
+.contactFormBox{
+    background-color: silver;
+}
+.contactContainer textarea{
+    width: 600px;
+}
+.contactForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
